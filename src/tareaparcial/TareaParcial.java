@@ -9,7 +9,7 @@ public class TareaParcial {
         // Declaracion de variables
         
     String empleado;
-    double ht, th, sb, d, sn;
+    double ht, th, sb, d, sn, ts;
     //creando el objeto lectura
     Scanner lectura= new Scanner(System.in);
     //Entrada de datos
@@ -19,6 +19,8 @@ public class TareaParcial {
     ht = lectura.nextDouble();
     System.out.print("Tarifa por hora: ");
     th=lectura.nextDouble();
+    System.out.print("Tarifa por minuto: ");
+    ts=lectura.nextDouble();
     //Proceso de datos
     sb=ht*th;
     d=sb*0.13;
